@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class DXCornerImgClipOval extends StatefulWidget {
+class DXCornerImgClipOvalScreen extends StatefulWidget {
 
-  static const String routeName = "/DXCornerImgClipOval";
+  static const String routeName = "/DXCornerImgClipOvalScreen";
   @override
-  _DXCornerImgClipOvalState createState() => _DXCornerImgClipOvalState();
+  _DXCornerImgClipOvalScreenState createState() => _DXCornerImgClipOvalScreenState();
 }
 
-class _DXCornerImgClipOvalState extends State<DXCornerImgClipOval> {
+class _DXCornerImgClipOvalScreenState extends State<DXCornerImgClipOvalScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

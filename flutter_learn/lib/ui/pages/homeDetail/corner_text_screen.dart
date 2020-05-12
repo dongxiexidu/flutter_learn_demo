@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class DXCornerText extends StatefulWidget {
+class DXCornerTextScreen extends StatefulWidget {
 
-  static const String routeName = "/DXCornerText";
+  static const String routeName = "/DXCornerTextScreen";
   @override
-  _DXCornerTextState createState() => _DXCornerTextState();
+  _DXCornerTextScreenState createState() => _DXCornerTextScreenState();
 }
 
-class _DXCornerTextState extends State<DXCornerText> {
+class _DXCornerTextScreenState extends State<DXCornerTextScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

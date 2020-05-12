@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learn/ui/pages/homeDetail/corner_img_cirleAvatar.dart';
-import 'package:flutter_learn/ui/pages/homeDetail/corner_img_clipOval.dart';
-import 'package:flutter_learn/ui/pages/homeDetail/corner_img_clipRRect.dart';
-import 'package:flutter_learn/ui/pages/homeDetail/corner_text.dart';
+import 'package:flutter_learn/ui/pages/homeDetail/buttons_screen.dart';
+
+import 'package:flutter_learn/ui/pages/homeDetail/corner_img_cirleAvatar_screen.dart';
+import 'package:flutter_learn/ui/pages/homeDetail/corner_img_clipOval_screen.dart';
+import 'package:flutter_learn/ui/pages/homeDetail/corner_img_clipRRect_screen.dart';
+import 'package:flutter_learn/ui/pages/homeDetail/corner_text_screen.dart';
 
 List<String> mainTitles = [
   "文本圆角 CircleAvatar",
   "圆角图像1 CircleAvatar",
   "圆角图像2 ClipOval",
   "圆角图像3 ClipRRect",
-
+  "按钮 Buttons"
 ];
 
 
@@ -22,8 +24,9 @@ class DXHomeContent extends StatelessWidget {
       itemBuilder: (BuildContext context, int index) {
         return GestureDetector(
           child: ListTile(
-              title: Text(mainTitles[index]),
-              trailing: Icon(Icons.arrow_forward_ios)
+            contentPadding: EdgeInsets.symmetric(vertical: 0.0,horizontal: 10.0),
+            title: Text(mainTitles[index]),
+            trailing: Icon(Icons.arrow_forward_ios)
           ),
           onTap: () {
             jump(index, context);
@@ -40,16 +43,19 @@ class DXHomeContent extends StatelessWidget {
   void jump(int index, BuildContext context) {
     switch (index) {
       case 0:
-        Navigator.of(context).pushNamed(DXCornerText.routeName);
+        Navigator.of(context).pushNamed(DXCornerTextScreen.routeName);
         break;
       case 1:
-        Navigator.of(context).pushNamed(DXCornerImgCircleAvatar.routeName);
+        Navigator.of(context).pushNamed(DXCornerImgCircleAvatarScreen.routeName);
         break;
       case 2:
-        Navigator.of(context).pushNamed(DXCornerImgClipOval.routeName);
+        Navigator.of(context).pushNamed(DXCornerImgClipOvalScreen.routeName);
         break;
       case 3:
-        Navigator.of(context).pushNamed(DXCornerImgClipRRect.routeName);
+        Navigator.of(context).pushNamed(DXCornerImgClipRRectScreen.routeName);
+        break;
+      case 4:
+        Navigator.of(context).pushNamed(DXButtonsScreen.routeName);
         break;
     }
   }

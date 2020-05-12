@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
-class DXCornerImgCircleAvatar extends StatefulWidget {
+class DXCornerImgCircleAvatarScreen extends StatefulWidget {
 
-  static const String routeName = "/DXCornerImgCirclAvatar";
+  static const String routeName = "/DXCornerImgCircleAvatarScreen";
   @override
-  _DXCornerImgCircleAvatarState createState() => _DXCornerImgCircleAvatarState();
+  _DXCornerImgCircleAvatarScreenState createState() => _DXCornerImgCircleAvatarScreenState();
 }
 
-class _DXCornerImgCircleAvatarState extends State<DXCornerImgCircleAvatar> {
+class _DXCornerImgCircleAvatarScreenState extends State<DXCornerImgCircleAvatarScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("文本圆角"),
+        title: Text("CircleAvatar"),
       ),
       body: Container(
         alignment: Alignment.center,
