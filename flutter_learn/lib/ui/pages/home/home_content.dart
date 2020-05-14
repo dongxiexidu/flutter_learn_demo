@@ -1,17 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learn/ui/pages/homeDetail/dashedLine_screen.dart';
 import 'package:flutter_learn/ui/pages/homeDetail/buttons_screen.dart';
 
 import 'package:flutter_learn/ui/pages/homeDetail/corner_img_cirleAvatar_screen.dart';
 import 'package:flutter_learn/ui/pages/homeDetail/corner_img_clipOval_screen.dart';
 import 'package:flutter_learn/ui/pages/homeDetail/corner_img_clipRRect_screen.dart';
 import 'package:flutter_learn/ui/pages/homeDetail/corner_text_screen.dart';
+import 'package:flutter_learn/ui/pages/homeDetail/star_rating_screen.dart';
+import 'package:flutter_learn/ui/pages/homeDetail/textField_screen.dart';
 
 List<String> mainTitles = [
   "文本圆角 CircleAvatar",
   "圆角图像1 CircleAvatar",
   "圆角图像2 ClipOval",
   "圆角图像3 ClipRRect",
-  "按钮 Buttons"
+  "按钮 Buttons",
+  "输入框 TextField",
+  "虚线的封装",
+  "评星的封装",
 ];
 
 
@@ -56,6 +62,15 @@ class DXHomeContent extends StatelessWidget {
         break;
       case 4:
         Navigator.of(context).pushNamed(DXButtonsScreen.routeName);
+        break;
+      case 5:
+        Navigator.of(context).pushNamed(DXTextFieldScreen.routeName);
+        break;
+      case 6:
+        Navigator.of(context).pushNamed(DXDashedLineScreen.routeName);
+        break;
+      case 7:
+        Navigator.of(context).pushNamed(DXStarRatingScreen.routeName);
         break;
     }
   }

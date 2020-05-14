@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learn/ui/pages/homeDetail/dashedLine_screen.dart';
 
 import 'package:flutter_learn/ui/pages/homeDetail/buttons_screen.dart';
 import 'package:flutter_learn/ui/pages/homeDetail/corner_img_cirleAvatar_screen.dart';
 import 'package:flutter_learn/ui/pages/homeDetail/corner_img_clipOval_screen.dart';
 import 'package:flutter_learn/ui/pages/homeDetail/corner_img_clipRRect_screen.dart';
 import 'package:flutter_learn/ui/pages/homeDetail/corner_text_screen.dart';
+import 'package:flutter_learn/ui/pages/homeDetail/star_rating_screen.dart';
+import 'package:flutter_learn/ui/pages/homeDetail/textField_screen.dart';
 import 'package:flutter_learn/ui/pages/main/mainScreen.dart';
 
 class DXRouter {
@@ -19,6 +22,9 @@ class DXRouter {
     DXCornerImgClipOvalScreen.routeName: (ctx) => DXCornerImgClipOvalScreen(),
     DXCornerImgClipRRectScreen.routeName: (ctx) => DXCornerImgClipRRectScreen(),
     DXButtonsScreen.routeName: (ctx) => DXButtonsScreen(),
+    DXTextFieldScreen.routeName: (ctx) => DXTextFieldScreen(),
+    DXDashedLineScreen.routeName:  (ctx) => DXDashedLineScreen(),
+    DXStarRatingScreen.routeName:  (ctx) => DXStarRatingScreen(),
   };
 
   // 自己扩展
