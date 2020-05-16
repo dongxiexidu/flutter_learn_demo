@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learn/ui/pages/homeDetail/corner_img_container_screen.dart';
 import 'package:flutter_learn/ui/pages/homeDetail/dashedLine_screen.dart';
 import 'package:flutter_learn/ui/pages/homeDetail/buttons_screen.dart';
 
@@ -6,6 +7,7 @@ import 'package:flutter_learn/ui/pages/homeDetail/corner_img_cirleAvatar_screen.
 import 'package:flutter_learn/ui/pages/homeDetail/corner_img_clipOval_screen.dart';
 import 'package:flutter_learn/ui/pages/homeDetail/corner_img_clipRRect_screen.dart';
 import 'package:flutter_learn/ui/pages/homeDetail/corner_text_screen.dart';
+import 'package:flutter_learn/ui/pages/homeDetail/read_local_json.dart';
 import 'package:flutter_learn/ui/pages/homeDetail/star_rating_screen.dart';
 import 'package:flutter_learn/ui/pages/homeDetail/textField_screen.dart';
 
@@ -14,10 +16,12 @@ List<String> mainTitles = [
   "圆角图像1 CircleAvatar",
   "圆角图像2 ClipOval",
   "圆角图像3 ClipRRect",
+  "圆角图像4 Container",
   "按钮 Buttons",
   "输入框 TextField",
   "虚线的封装",
   "评星的封装",
+  "本地json的读取",
 ];
 
 
@@ -61,16 +65,22 @@ class DXHomeContent extends StatelessWidget {
         Navigator.of(context).pushNamed(DXCornerImgClipRRectScreen.routeName);
         break;
       case 4:
-        Navigator.of(context).pushNamed(DXButtonsScreen.routeName);
+        Navigator.of(context).pushNamed(DXCornerImgContainerScreen.routeName);
         break;
       case 5:
-        Navigator.of(context).pushNamed(DXTextFieldScreen.routeName);
+        Navigator.of(context).pushNamed(DXButtonsScreen.routeName);
         break;
       case 6:
-        Navigator.of(context).pushNamed(DXDashedLineScreen.routeName);
+        Navigator.of(context).pushNamed(DXTextFieldScreen.routeName);
         break;
       case 7:
+        Navigator.of(context).pushNamed(DXDashedLineScreen.routeName);
+        break;
+      case 8:
         Navigator.of(context).pushNamed(DXStarRatingScreen.routeName);
+        break;
+      case 9:
+        Navigator.of(context).pushNamed(DXReadLocalJsonScreen.routeName);
         break;
     }
   }
